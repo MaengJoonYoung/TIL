@@ -48,7 +48,8 @@ SQL은 데이터베이스, 그 중에서도 ***관계형 데이터 베이스와 
 
 
 ## *2. 관계형 데이터베이스의 관계 종류*
- 
+
+<br>
 
 관계 종류는 여러 가지가 있는데 오늘 배운 건 아래에 있는 4가지이다.
 
@@ -90,3 +91,81 @@ SQL은 데이터베이스, 그 중에서도 ***관계형 데이터 베이스와 
 <br>
 
 자기참조 관계는 일대다 관계가 다른 테이블과 이루어진 것이 아니라 한 테이블 내에서 이루어진 것이라고 생각하면 된다. 예를 들어 우리가 어느 사이트에 회원가입을 할 때 추천인을 입력하는 경우를 생각해보자. 각 유저가 선택할 수 있는 추천인은 한 명이지만 추천인은 한 명의 유저가 중복되어 선택될 수 있다.
+
+<br>
+<hr>
+<br>
+
+## **3. SELECT 실행 순서**
+
+<br>
+
+
+*쿼리문은 적힌 순서대로 실행되는 것이 아니라 정해진 순서되로 사용되는데, 실행 순서는 다음과 같다. FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY*
+
+<br>
+
+~~~sql
+SELECT CustomerId, AVG(Total)
+FROM invoices
+WHERE CustomerId >= 10
+GROUP BY CustomerId
+HAVING SUM(Total) >= 30
+ORDER BY 2 ;
+~~~
+
+<br>
+
+위와 같은 경우 실행 순서는 아래와 같다
+
+<br>
+
+*1. FROM : invoices라는 테이블에 접근*
+
+*2. WHERE : customerid가 10 이상인 레코드를 조회*
+
+*3. GROUP BY : customoerid를 기준으로 그룹화*
+
+*4. HAVING : total의 합계가 30이 넘는 데이터 조회*
+
+*5. SELECT : 조회된 레코드에서 customerid와 total의 평균값을 가져온다*
+
+*6. ORDER BY : total의 평균값을 기준으로 오름차순으로 정렬한다.*
+
+<br>
+
+이 실행순서를 지키지 않는 경우 오류가 발생한다.
+
+<br>
+
+~~~sql
+SELECT CustomerId, Total
+FROM invoices
+GROUP BY CustomerId
+WHERE CustomerId >= 10
+~~~
+
+<br>
+
+이러한 경우 WHERE가 GROUP BY 이전에 실행되어야 하는데 순서가 밑에 있기에 오류가 발생한다.
+
+<br>
+
+## **4. 서브쿼리**
+
+<br> 
+
+*쿼리문을 작성할 때 다른 쿼리문을 포함하는 것이 서브쿼리(SUBQUERY)이고 서브쿼리는 소괄호 안에 감싸져 있다.*
+
+<br>
+
+~~~sql
+SELECT t.Name FROM tracks t 
+WHERE t.AlbumId IN 
+(SELECT a.AlbumId FROM albums a 
+WHERE a.Title IN ('Unplugged', 'Outbreak'));
+~~~
+
+<br>
+
+해당 쿼리는 tracks라는 테이블의 AlbumID 중 Title에 'Unplugged', 'Outbreak'가 포함되어 있는 AlbumID를 조회하여 트랙의 이름을 가져온 쿼리문이다. **이를 위해 albums라는 테이블에서 title에 'Unplugged', 'Outbreak' 포함되어 있는 AlbumID를 가져오는 서브쿼리를 사용한 것이다.**
