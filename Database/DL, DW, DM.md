@@ -8,6 +8,7 @@
 <br>
 
 ![test](https://user-images.githubusercontent.com/89771322/144604375-13e221f7-ffc9-4502-98cc-e5e9f21a2ba7.png?raw=true)
+***[이미지 출처](https://www.grazitti.com/blog/data-lake-vs-data-warehouse-which-one-should-you-go-for/)***
 
 <br>
 
@@ -50,3 +51,6 @@
 
 ### *참고자료 :*
 https://brunch.co.kr/@pubjinson/52
+
+### *이미지 출처 :*
+https://www.grazitti.com/blog/data-lake-vs-data-warehouse-which-one-should-you-go-for/
