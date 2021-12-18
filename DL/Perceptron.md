@@ -10,7 +10,7 @@
 
 <br>
 
-[Perceptrons](https://user-images.githubusercontent.com/89771322/146639543-1b423a99-0e85-451f-9e19-25f168c80b38.jpeg)
+![Perceptrons](https://user-images.githubusercontent.com/89771322/146639543-1b423a99-0e85-451f-9e19-25f168c80b38.jpeg)
 
 <br>
 
@@ -34,7 +34,7 @@
 
 <br>
 
-[step functions](https://user-images.githubusercontent.com/89771322/146639798-1fd35668-6cf1-49b6-b3d9-7a4cdabc9300.png)
+![step functions](https://user-images.githubusercontent.com/89771322/146639798-1fd35668-6cf1-49b6-b3d9-7a4cdabc9300.png)
 
 <br>
 
@@ -48,7 +48,7 @@
 
 <br>
 
-[sigmoid](https://user-images.githubusercontent.com/89771322/146639913-6af8868a-54dd-4144-9804-5e16a60e4484.png)
+![sigmoid](https://user-images.githubusercontent.com/89771322/146639913-6af8868a-54dd-4144-9804-5e16a60e4484.png)
 
 <br>
 
@@ -64,7 +64,7 @@
 
 <br>
 
-[relu](https://user-images.githubusercontent.com/89771322/146639979-7885b44b-b0ec-4e1a-af64-ad453453573e.png)
+![image](https://user-images.githubusercontent.com/89771322/146639979-7885b44b-b0ec-4e1a-af64-ad453453573e.png)
 
 <br>
 
@@ -92,7 +92,7 @@ ReLU function은 음수인 값은 모두 0으로 출력하고 양수인 값은 �
 
 <br>
 
-[layer](https://user-images.githubusercontent.com/89771322/146640841-6f43585f-4fd6-494e-b678-3549061ea680.jpeg)
+![layer](https://user-images.githubusercontent.com/89771322/146640841-6f43585f-4fd6-494e-b678-3549061ea680.jpeg)
 
 <br>
 
