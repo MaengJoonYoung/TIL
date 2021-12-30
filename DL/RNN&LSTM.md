@@ -95,7 +95,7 @@ LSTM은 그림에서 보이는 두개의 직선 중 위에 보이는 직선인 c
 <br>
 
 ### *GRU (Gated Recurrent Unit) :*
-GRU는 LSMT를 간소화 한 버전으로 forget gate와 input gate를 하나의 gate에서 관리하고 cell state도 사라졌다.
+GRU는 LSTM을 간소화 한 버전으로 forget gate와 input gate를 하나의 gate에서 관리하고 cell state도 사라졌다.
 
 <br>
 
@@ -155,8 +155,8 @@ y_train = np.array(y_train)
 model = Sequential()
 model.add(Input(shape=(max_len,)))
 model.add(Embedding(num_words, 50, input_length=max_len))
-model.add(LSMT(64, dropout=0.2))
-model.add(Desne(1, activation='sigmoid'))
+model.add(LSTM(64, dropout=0.2))
+model.add(Dense(1, activation='sigmoid'))
 
 model.compile(loss='binary_crossentropy',
               optimizer='adam', 
