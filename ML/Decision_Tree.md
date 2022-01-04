@@ -72,6 +72,9 @@ from sklearn.pipeline import make_pipeline
 # 비용함수로 엔트로피 사용.
 pipe = make_pipeline(OrinalEncoder(),
 DecisionTreeClassifier(random_state=1, criterion='entropy'))
+
+# 모델 학습 (X_train, y_train) -> 훈련 데이터셋.
+pipe.fit(X_train, y_train)
 ```
 
 <br>
