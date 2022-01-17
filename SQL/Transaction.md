@@ -1,4 +1,4 @@
-# Transaction(트랜잭션) & SQL
+# Transaction(트랜잭션)
 
 <br>
 
