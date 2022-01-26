@@ -22,7 +22,7 @@ base case는 **반복 작업을 종료하는 조건**이라고 할 수 있다. �
 
 <br>
 
-![재귀 무한반복](https://user-images.githubusercontent.com/89771322/151159884-12a99c35-b6cd-4405-99fe-2336c57d4d05.jpeg)
+![Recursion function](https://user-images.githubusercontent.com/89771322/151164750-03f00974-b598-46a3-8aff-6ea2b7af6b8f.gif)
 
 <br>
 
