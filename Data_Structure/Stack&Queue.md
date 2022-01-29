@@ -35,3 +35,13 @@
 큐에서 데이터의 삭제가 이뤄지는 곳을 **front**, 삽입이 이뤄지는 곳을 **rear**라고 한다. rear통해 데이터를 삽입하는 것을 `enQueue`라고 하고 fornt를 통해 데이터가 삭제되는 것을 `dnQueue`라고 한다.
 
 > 큐는 자료의 순서를 보장하는 구조이기 때문에, **자료를 순서대로 처리해야할때 주로 사용된다고 한다.** 예를 들어 프린터기의 출력작업, 은행 업무 등이 있다.
+
+<br>
+<br>
+<hr>
+
+### *참고자료*
+https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0) <br>
+https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D <br>
+https://devuna.tistory.com/22 <br>
+https://mygumi.tistory.com/357 <br>
