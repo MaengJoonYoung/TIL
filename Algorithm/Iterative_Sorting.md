@@ -129,3 +129,18 @@ def bubble_sort(li):
                 li[j], li[j+1] = li[j+1], li[j]
     return li
 ```
+
+<br>
+<br>
+<hr>
+
+### ***참고자료***
+
+https://www.daleseo.com/sort-bubble/ <br>
+https://ko.wikipedia.org/wiki/%EA%B1%B0%ED%92%88_%EC%A0%95%EB%A0%AC <br>
+https://runestone.academy/ns/books/published//pythonds/SortSearch/TheInsertionSort.html <br>
+https://ko.wikipedia.org/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC <br>
+https://hongl.tistory.com/9 <br>
+https://stackoverflow.com/questions/4601057/why-is-selection-sort-not-stable <br>
+https://godgod732.tistory.com/13 <br>
+https://ko.wikipedia.org/wiki/%EC%84%A0%ED%83%9D_%EC%A0%95%EB%A0%AC
