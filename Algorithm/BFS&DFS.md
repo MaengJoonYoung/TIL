@@ -58,7 +58,8 @@ def bfs(start_node, bfs_graph):
 
 <br>
 
-![dfs](https://user-images.githubusercontent.com/89771322/153003523-d8621414-1ff5-4959-b1de-fe9ac6a9ac69.gif)
+![dfs](https://user-images.githubusercontent.com/89771322/153003523-d8621414-1ff5-4959-b1de-fe9ac6a9ac69.gif)<br>
+[출처](https://developer-mac.tistory.com/64)
 
 <br>
 
@@ -91,7 +92,8 @@ def dfs(node, dfs_graph, dfs_list=[]):
 
 <br>
 
-![bfs_dfs](https://user-images.githubusercontent.com/89771322/153008218-5224a40a-23b6-4626-81e5-fbbb50a070c6.png)
+![bfs_dfs](https://user-images.githubusercontent.com/89771322/153008218-5224a40a-23b6-4626-81e5-fbbb50a070c6.png)<br>
+[출처](https://velog.io/@elma98/210620.-Today-I-LearnedTIL-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0BFS-DFS)
 
 <br>
 
@@ -103,3 +105,12 @@ BFS와 DFS는 그래프와 트리의 구조에 따라 서로의 장단점이 역
 1. 모든 정점을 방문하는 경우 : **아무거나 사용해도 무방**하다. 다만, DFS의 경우 재귀를 사용할 경우 RecursionError에 유의해야한다.
 2. 최단 경로 : 주로 **BFS를 선호**한다고 한다. 그 이유는 BFS는 인접한 노드들을 우선으로 방문하기에 시작 정점과 목표 정점간의 최단 길이 경로를 보장하지만(가중치가 1일 경우), DFS의 경우 최대 깊이까지 내려갔다가 다시 돌아오기에 최단 길이 경로를 보장하지는 않는다. 하지만, 순회하고자 하는 트리의 구조가 **극심하게 언밸런스하다면, DFS가 첫 방문 노드만 잘 설정하면 훨씬 빠른 경로를 발견할 수도 있다.**
 3. 경로의 특징을 저장해야하는 경우 : DFS를 선호한다고 한다. 위 그림에서 볼 수 있듯이 BFS는 경로와 상관없이 인접 노드들을 탐색하지만 DFS는 경로를 따라가며 순회하기에 DFS를 선호한다.
+
+<br>
+<br>
+<hr>
+
+### *참고자료*
+
+https://ko.wikipedia.org/wiki/%EA%B9%8A%EC%9D%B4_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89<br>https://ko.wikipedia.org/wiki/%EB%84%88%EB%B9%84_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89<br>
+https://devuna.tistory.com/32<br>
