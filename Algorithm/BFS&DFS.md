@@ -83,7 +83,7 @@ def dfs(node, dfs_graph, dfs_list=[]):
 
     for i in dfs_graph[node]:
         if i not in dfs_list:
-            dfs_recur(i,dfs_graph,dfs_list)
+            dfs(i,dfs_graph,dfs_list)
     return dfs_list
 ```
 > 인접 노드부터 함수를 재귀적으로 호출한뒤 더 이상 호출하지 못하면 함수가 종료되고 다시 첫번째 시작 정점으로 돌아와 다른 인접노드를 재귀적으로 호출하는 방식으로 진행된다.
